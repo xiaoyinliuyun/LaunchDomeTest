@@ -31,6 +31,8 @@ public class MainCActivity extends AppCompatActivity {
     @BindView(R.id.tvHello)
     TextView tvHello;
 
+
+
     private Handler mHandler = new Handler() {
         @Override
         public void handleMessage(Message msg) {
