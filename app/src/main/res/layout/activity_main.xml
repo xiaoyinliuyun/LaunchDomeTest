@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yangkunjian.launchmodetest.custom.CustomLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:context="com.yangkunjian.launchmodetest.MainCActivity">
+
+    <com.yangkunjian.launchmodetest.custom.CustomTextView
+        android:id="@+id/tvHello"
+        android:layout_width="100dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center"
+        android:background="@drawable/list_selector"
+        android:gravity="center"
+        android:text="MainActivity" />
+
+</com.yangkunjian.launchmodetest.custom.CustomLinearLayout>

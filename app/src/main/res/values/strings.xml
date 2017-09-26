@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">LaunchModeTest</string>
+    <string name="permission_des">这是一个付款界面</string>
+</resources>

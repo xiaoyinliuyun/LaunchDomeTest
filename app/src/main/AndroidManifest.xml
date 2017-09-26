@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.yangkunjian.launchmodetest">
+
+    <permission
+        android:name="com.yangkunjian.launchmodetest.START_ACTIVITY"
+        android:description="@string/permission_des"
+        android:label="启动First权限"
+        android:permissionGroup="android.permission-group.COST_MONEY"
+        android:protectionLevel="dangerous" />
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM" />
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher_round"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainCActivity"
+            android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".FirstDActivity"
+            android:launchMode="singleTask"
+            android:permission="com.yangkunjian.launchmodetest.START_ACTIVITY">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SecondAActivity"
+            android:excludeFromRecents="true"
+            android:launchMode="singleInstance" />
+        <activity
+            android:name=".ThreeBActivity"
+            android:launchMode="singleInstance"
+            android:taskAffinity="com.yangkunjian.task" />
+
+        <service
+            android:name=".OneService"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name=".OneIntentService"
+            android:exported="false" />
+        <service
+            android:name=".MyIntentService"
+            android:exported="false"></service>
+    </application>
+
+</manifest>
