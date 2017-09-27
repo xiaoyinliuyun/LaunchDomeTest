@@ -26,6 +26,8 @@ import butterknife.OnClick;
 
 public class MainCActivity extends AppCompatActivity {
 
+    //这行是在dev分支上的修改
+
     private static final String TAG = "Activity         ---";
 
     // 这行是在master上的修改
