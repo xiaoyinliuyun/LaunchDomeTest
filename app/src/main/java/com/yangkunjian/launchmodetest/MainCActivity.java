@@ -35,6 +35,10 @@ public class MainCActivity extends AppCompatActivity {
     @BindView(R.id.tvHello)
     TextView tvHello;
 
+    /**
+     * 在dev分支上的第二次修改
+     */
+
     private Handler mHandler = new Handler() {
         @Override
         public void handleMessage(Message msg) {
