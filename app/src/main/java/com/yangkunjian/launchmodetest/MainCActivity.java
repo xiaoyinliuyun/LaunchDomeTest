@@ -28,6 +28,10 @@ public class MainCActivity extends AppCompatActivity {
 
     private static final String TAG = "Activity         ---";
 
+    /**
+     * 在dev分支上的修改
+     */
+
     @BindView(R.id.tvHello)
     TextView tvHello;
 
