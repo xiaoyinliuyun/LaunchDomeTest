@@ -30,6 +30,7 @@ public class MainCActivity extends AppCompatActivity {
 
     @BindView(R.id.tvHello)
     TextView tvHello;
+    
     private Handler mHandler = new Handler() {
         @Override
         public void handleMessage(Message msg) {
@@ -37,9 +38,7 @@ public class MainCActivity extends AppCompatActivity {
             tvHello.invalidate();
             tvHello.post(new Runnable() {
                 @Override
-                public void run() {
-
-                }
+                public void run() {}
             });
         }
     };
