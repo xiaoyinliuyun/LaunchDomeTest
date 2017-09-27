@@ -26,15 +26,11 @@ import butterknife.OnClick;
 
 public class MainCActivity extends AppCompatActivity {
 
-    //这行是在dev分支上的修改
-
     private static final String TAG = "Activity         ---";
-
-    // 这行是在master上的修改
 
     @BindView(R.id.tvHello)
     TextView tvHello;
-    //change 3
+
     private Handler mHandler = new Handler() {
         @Override
         public void handleMessage(Message msg) {
@@ -42,7 +38,9 @@ public class MainCActivity extends AppCompatActivity {
             tvHello.invalidate();
             tvHello.post(new Runnable() {
                 @Override
-                public void run() {}
+                public void run() {
+
+                }
             });
         }
     };
