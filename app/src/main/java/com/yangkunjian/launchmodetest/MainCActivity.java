@@ -30,7 +30,7 @@ public class MainCActivity extends AppCompatActivity {
 
     @BindView(R.id.tvHello)
     TextView tvHello;
-    
+    //change 3
     private Handler mHandler = new Handler() {
         @Override
         public void handleMessage(Message msg) {
